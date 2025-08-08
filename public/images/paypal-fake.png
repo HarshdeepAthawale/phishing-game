@@ -1,0 +1,14 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f8f9fa"/>
+  <rect x="0" y="0" width="100%" height="60" fill="#0070ba"/>
+  <text x="50%" y="35" font-family="Arial" font-size="24" fill="white" text-anchor="middle">PayPal</text>
+  <text x="50%" y="80" font-family="Arial" font-size="16" fill="#333" text-anchor="middle">paypa1-secure.com</text>
+  <text x="50%" y="110" font-family="Arial" font-size="14" fill="#ff0000" text-anchor="middle">⚠️ URGENT: Account Security Alert!</text>
+  <rect x="50" y="140" width="300" height="40" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="70" y="165" font-family="Arial" font-size="14" fill="#999">Email address</text>
+  <rect x="50" y="190" width="300" height="40" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="70" y="215" font-family="Arial" font-size="14" fill="#999">Password</text>
+  <rect x="50" y="240" width="300" height="30" fill="#ff0000" rx="4"/>
+  <text x="200" y="260" font-family="Arial" font-size="12" fill="white" text-anchor="middle">VERIFY NOW - URGENT!</text>
+  <text x="50%" y="280" font-family="Arial" font-size="12" fill="#ff0000" text-anchor="middle">⚠️ Account will be suspended in 24 hours</text>
+</svg>

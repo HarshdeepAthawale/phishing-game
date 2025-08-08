@@ -1,46 +1,167 @@
-# Getting Started with Create React App
+# 🎯 Phishing Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An educational web game that teaches users how to identify phishing websites through interactive gameplay.
 
-## Available Scripts
+## 🎮 How to Play
 
-In the project directory, you can run:
+1. **Start the Game**: Click "Start Game" to begin
+2. **View Screenshots**: You'll see 10 website screenshots - some real, some fake
+3. **Make Your Choice**: Click "Real" or "Phishing" for each website
+4. **Get Feedback**: Receive instant feedback and explanations
+5. **See Your Score**: View your final score, accuracy, and improvement tips
 
-### `npm start`
+## 🏆 Scoring System
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **+10 points**: Correct answer
+- **+5 points**: Fast answer bonus (under 5 seconds)
+- **-3 points**: Wrong answer
+- **Final Score**: Total points earned throughout the game
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🎯 Educational Goals
 
-### `npm test`
+This game helps players learn to identify phishing websites by recognizing:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Suspicious domains** (typos, unusual extensions)
+- **Urgent messages** (account suspension, security alerts)
+- **Poor design quality** (inconsistent branding, amateur layouts)
+- **Requests for sensitive information** (passwords, credit cards, SSN)
+- **Grammar and spelling errors**
 
-### `npm run build`
+## 🛠️ Technology Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend**: React 18 + TypeScript
+- **Styling**: Tailwind CSS
+- **Build Tool**: Create React App
+- **Deployment**: Ready for Vercel/Netlify
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+- Node.js (version 14 or higher)
+- npm or yarn
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Installation
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd phishing-game
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+3. Start the development server:
+```bash
+npm start
+```
 
-## Learn More
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Building for Production
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm run build
+```
+
+This creates a `build` folder with optimized production files.
+
+## 📁 Project Structure
+
+```
+phishing-game/
+├── public/
+│   ├── images/          # Website screenshots
+│   └── index.html
+├── src/
+│   ├── components/      # React components
+│   │   ├── StartScreen.tsx
+│   │   ├── GameGrid.tsx
+│   │   ├── TileCard.tsx
+│   │   └── EndScreen.tsx
+│   ├── data/
+│   │   └── rounds.json  # Game data
+│   ├── types/
+│   │   └── game.ts      # TypeScript interfaces
+│   ├── App.tsx          # Main app component
+│   └── index.tsx        # Entry point
+├── tailwind.config.js   # Tailwind configuration
+└── package.json
+```
+
+## 🎨 Customization
+
+### Adding New Rounds
+
+Edit `src/data/rounds.json` to add new website screenshots:
+
+```json
+{
+  "id": 11,
+  "image": "/images/new-site.png",
+  "label": "phishing",
+  "title": "New Phishing Site",
+  "explanation": "This is a phishing site because...",
+  "indicators": ["Suspicious domain", "Urgent message", "Poor design"]
+}
+```
+
+### Modifying Scoring
+
+Update the scoring logic in `src/components/GameGrid.tsx`:
+
+```typescript
+// Calculate points
+let points = isCorrect ? 10 : -3;
+if (isCorrect && timeSpent < 5000) {
+  points += 5; // Fast answer bonus
+}
+```
+
+## 🌐 Deployment
+
+### Vercel
+
+1. Install Vercel CLI: `npm i -g vercel`
+2. Deploy: `vercel`
+
+### Netlify
+
+1. Build the project: `npm run build`
+2. Drag the `build` folder to Netlify
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🎓 Educational Use
+
+This game is designed for educational purposes to raise awareness about phishing attacks. It can be used in:
+
+- Cybersecurity training programs
+- School computer science classes
+- Corporate security awareness training
+- Personal learning and skill development
+
+## 🔒 Security Note
+
+All website screenshots in this game are either:
+- Legitimate websites (used with educational intent)
+- Mock phishing sites created for educational purposes
+
+No real phishing sites are used, and all content is designed purely for educational value.
+
+---
+
+**Remember**: Stay vigilant online and always verify before you trust!

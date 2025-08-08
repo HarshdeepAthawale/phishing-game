@@ -40,7 +40,7 @@ const TileCard: React.FC<TileCardProps> = ({
     <div className="bg-white rounded-lg shadow-lg overflow-hidden max-w-md mx-auto">
       <div className="relative">
         <img
-          src={round.image}
+          src={process.env.PUBLIC_URL + round.image}
           alt={round.title}
           className="w-full h-48 object-cover"
           onError={(e) => {

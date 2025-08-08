@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "/images/google-real.png",
+    "image": "/images/google-real.svg",
     "label": "real",
     "title": "Google Search",
     "explanation": "This is the legitimate Google search page. Notice the correct domain (google.com), proper SSL certificate, and familiar Google branding.",
@@ -9,31 +9,31 @@
   },
   {
     "id": 2,
-    "image": "/images/paypal-fake.png",
+    "image": "/images/amazon-phishing.svg",
     "label": "phishing",
-    "title": "PayPal Login",
-    "explanation": "This is a phishing site. Notice the suspicious domain (paypa1-secure.com), urgent security message, and poor grammar.",
-    "indicators": ["Suspicious domain: paypa1-secure.com", "Urgent security message", "Poor grammar", "Requests sensitive info"]
+    "title": "Amazon Security Alert",
+    "explanation": "This is a phishing site. Notice the suspicious domain (amazon-security.net), urgent account suspension message, and pressure tactics.",
+    "indicators": ["Suspicious domain: amazon-security.net", "Urgent language", "Pressure tactics", "Requests immediate action"]
   },
   {
     "id": 3,
-    "image": "/images/amazon-real.png",
+    "image": "/images/amazon-real.svg",
     "label": "real",
     "title": "Amazon Shopping",
-    "explanation": "This is the legitimate Amazon website. Notice the correct domain (amazon.com), proper navigation, and professional design.",
-    "indicators": ["Correct domain: amazon.com", "Professional design", "Proper navigation", "No urgent messages"]
+    "explanation": "This is the legitimate Amazon website. Notice the correct domain (amazon.in), proper navigation, and professional design.",
+    "indicators": ["Correct domain: amazon.in", "Professional design", "Proper navigation", "No urgent messages"]
   },
   {
     "id": 4,
-    "image": "/images/bank-fake.png",
+    "image": "/images/facebook-phishing.svg",
     "label": "phishing",
-    "title": "Bank Login",
-    "explanation": "This is a phishing site. Notice the suspicious domain (secure-bank-verify.net), urgent account suspension message, and poor design.",
-    "indicators": ["Suspicious domain: secure-bank-verify.net", "Urgent account suspension", "Poor design quality", "Requests personal info"]
+    "title": "Facebook Security Alert",
+    "explanation": "This is a phishing site. Notice the wrong domain (facebook-security.com), fake security alert, and fear tactics.",
+    "indicators": ["Wrong domain: facebook-security.com", "Fake security alert", "Fear tactics", "Requests password"]
   },
   {
     "id": 5,
-    "image": "/images/facebook-real.png",
+    "image": "/images/facebook-real.svg",
     "label": "real",
     "title": "Facebook Login",
     "explanation": "This is the legitimate Facebook login page. Notice the correct domain (facebook.com), familiar blue branding, and proper security features.",
@@ -41,42 +41,106 @@
   },
   {
     "id": 6,
-    "image": "/images/netflix-fake.png",
+    "image": "/images/google-phishing.svg",
     "label": "phishing",
-    "title": "Netflix Account",
-    "explanation": "This is a phishing site. Notice the suspicious domain (netflix-account-verify.com), urgent billing message, and unusual design.",
-    "indicators": ["Suspicious domain: netflix-account-verify.com", "Urgent billing message", "Unusual design", "Requests payment info"]
+    "title": "Google Account Verification",
+    "explanation": "This is a phishing site. Notice the suspicious domain (google-verify.net), fake verification request, and threat language.",
+    "indicators": ["Fake domain: google-verify.net", "Fake verification", "Threat language", "Account suspension threat"]
   },
   {
     "id": 7,
-    "image": "/images/apple-real.png",
+    "image": "/images/apple-real.svg",
     "label": "real",
-    "title": "Apple ID",
-    "explanation": "This is the legitimate Apple ID page. Notice the correct domain (apple.com), clean Apple design, and proper security.",
+    "title": "Apple Store",
+    "explanation": "This is the legitimate Apple website. Notice the correct domain (apple.com), clean Apple design, and proper security.",
     "indicators": ["Correct domain: apple.com", "Clean Apple design", "Proper security", "No urgent messages"]
   },
   {
     "id": 8,
-    "image": "/images/microsoft-fake.png",
+    "image": "/images/apple-phishing.svg",
     "label": "phishing",
-    "title": "Microsoft Office",
-    "explanation": "This is a phishing site. Notice the suspicious domain (microsoft-office365.com), urgent license message, and poor design.",
-    "indicators": ["Suspicious domain: microsoft-office365.com", "Urgent license message", "Poor design quality", "Requests credit card"]
+    "title": "Apple ID Security Alert",
+    "explanation": "This is a phishing site. Notice the suspicious domain (apple-support.net), fake security alert, and time pressure tactics.",
+    "indicators": ["Suspicious domain: apple-support.net", "Fake security alert", "Time pressure", "Account lock threat"]
   },
   {
     "id": 9,
-    "image": "/images/twitter-real.png",
+    "image": "/images/twitter-real.svg",
     "label": "real",
-    "title": "Twitter Login",
-    "explanation": "This is the legitimate Twitter login page. Notice the correct domain (twitter.com), familiar Twitter branding, and proper design.",
+    "title": "Twitter Home",
+    "explanation": "This is the legitimate Twitter website. Notice the correct domain (twitter.com), familiar Twitter branding, and proper design.",
     "indicators": ["Correct domain: twitter.com", "Familiar Twitter branding", "Proper design", "No urgent messages"]
   },
   {
     "id": 10,
-    "image": "/images/instagram-fake.png",
+    "image": "/images/twitter-phishing.svg",
     "label": "phishing",
-    "title": "Instagram Security",
-    "explanation": "This is a phishing site. Notice the suspicious domain (instagram-security-verify.net), urgent security message, and poor grammar.",
-    "indicators": ["Suspicious domain: instagram-security-verify.net", "Urgent security message", "Poor grammar", "Requests password"]
+    "title": "Twitter Verification",
+    "explanation": "This is a phishing site. Notice the fake domain (twitter-verify.com), false verification offer, and urgency tactics.",
+    "indicators": ["Fake domain: twitter-verify.com", "False verification offer", "Urgency tactics", "Limited time pressure"]
+  },
+  {
+    "id": 11,
+    "image": "/images/twitter-profile-real.png",
+    "label": "real",
+    "title": "Twitter Profile Page",
+    "explanation": "This is the legitimate Twitter profile page. Notice the correct domain (twitter.com), familiar Twitter interface with blue branding, proper navigation, and standard profile layout with tweets, following/followers counts.",
+    "indicators": ["Correct domain: twitter.com", "Familiar Twitter blue branding", "Standard profile layout", "Proper navigation elements", "No urgent security messages"]
+  },
+  {
+    "id": 12,
+    "image": "/images/apple-store-india-real.png",
+    "label": "real",
+    "title": "Apple Store India",
+    "explanation": "This is the legitimate Apple Store India website. Notice the correct domain (apple.com/in), clean Apple design with black navigation, proper product categories, and official Apple branding throughout.",
+    "indicators": ["Correct domain: apple.com/in", "Clean Apple design", "Official Apple branding", "Proper product categories", "No urgent security alerts"]
+  },
+  {
+    "id": 13,
+    "image": "/images/facebook-login-real.png",
+    "label": "real",
+    "title": "Facebook Login Page",
+    "explanation": "This is the legitimate Facebook login page. Notice the correct domain (facebook.com), familiar blue Facebook branding, standard login form with email/phone and password fields, and proper security features.",
+    "indicators": ["Correct domain: facebook.com", "Familiar blue Facebook branding", "Standard login form", "Proper security features", "No urgent account alerts"]
+  },
+  {
+    "id": 14,
+    "image": "/images/google-search-real.png",
+    "label": "real",
+    "title": "Google Search Homepage",
+    "explanation": "This is the legitimate Google search homepage. Notice the correct domain (google.com), familiar Google logo and minimalist design, standard search bar with voice and image search options, and proper navigation elements.",
+    "indicators": ["Correct domain: google.com", "Familiar Google logo", "Minimalist design", "Standard search interface", "No urgent security messages"]
+  },
+  {
+    "id": 15,
+    "image": "/images/amazon-india-real.png",
+    "label": "real",
+    "title": "Amazon India Homepage",
+    "explanation": "This is the legitimate Amazon India website. Notice the correct domain (amazon.in), familiar Amazon orange branding, proper navigation with search bar, product categories, and professional e-commerce layout.",
+    "indicators": ["Correct domain: amazon.in", "Familiar Amazon orange branding", "Professional e-commerce layout", "Proper navigation", "No urgent account alerts"]
+  },
+  {
+    "id": 16,
+    "image": "/images/paypal-fake.png",
+    "label": "phishing",
+    "title": "PayPal Login",
+    "explanation": "This is a phishing site. Notice the suspicious domain (pay-pail.com) which is a misspelling of paypal.com, red error indicators on the login form, and pressure tactics to create urgency.",
+    "indicators": ["Suspicious domain: pay-pail.com", "Misspelled URL", "Red error indicators", "Pressure tactics", "Creates false urgency"]
+  },
+  {
+    "id": 17,
+    "image": "/images/tiffany-fake.png",
+    "label": "phishing",
+    "title": "Tiffany & Co. Store",
+    "explanation": "This is a phishing site. Notice the suspicious '80% OFF' banner which is unrealistic for a luxury brand like Tiffany & Co., and the overall design inconsistencies that don't match the legitimate brand.",
+    "indicators": ["Unrealistic discount: 80% OFF", "Luxury brand unlikely to offer huge discounts", "Suspicious promotional banner", "Design inconsistencies", "Too good to be true offers"]
+  },
+  {
+    "id": 18,
+    "image": "/images/office365-fake.png",
+    "label": "phishing",
+    "title": "Microsoft Office 365 Portal",
+    "explanation": "This is a phishing site. Notice the suspicious background image and layout that doesn't match Microsoft's standard Office 365 login page, along with potential domain inconsistencies.",
+    "indicators": ["Suspicious background image", "Non-standard Microsoft layout", "Domain inconsistencies", "Unusual design elements", "Doesn't match official Microsoft branding"]
   }
 ]

@@ -42,7 +42,7 @@ const TileCard: React.FC<TileCardProps> = ({
         <img
           src={process.env.PUBLIC_URL + round.image}
           alt={round.title}
-          className="w-full h-48 object-cover"
+          className="w-full h-full object-cover"
           onError={(e) => {
             // Fallback for missing images
             const target = e.target as HTMLImageElement;
